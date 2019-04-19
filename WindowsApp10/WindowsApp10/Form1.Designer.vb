@@ -26,13 +26,15 @@ Partial Class Form1
         Me.ФайлToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ОткрытьToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.РедактированиеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.УдалениеСтрокToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ИдеальныйФайлToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ПАЛИНДРОМЫToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ПоискToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.МаксПредлToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ВыходToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.lb1 = New System.Windows.Forms.ListBox()
-        Me.ВыходToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lb2 = New System.Windows.Forms.ListBox()
+        Me.tb = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -42,7 +44,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ФайлToolStripMenuItem, Me.РедактированиеToolStripMenuItem, Me.ПоискToolStripMenuItem, Me.ВыходToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1146, 33)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1533, 33)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -61,16 +63,16 @@ Partial Class Form1
         '
         'РедактированиеToolStripMenuItem
         '
-        Me.РедактированиеToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.УдалениеСтрокToolStripMenuItem, Me.ПАЛИНДРОМЫToolStripMenuItem})
+        Me.РедактированиеToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ИдеальныйФайлToolStripMenuItem, Me.ПАЛИНДРОМЫToolStripMenuItem})
         Me.РедактированиеToolStripMenuItem.Name = "РедактированиеToolStripMenuItem"
         Me.РедактированиеToolStripMenuItem.Size = New System.Drawing.Size(158, 29)
         Me.РедактированиеToolStripMenuItem.Text = "Редактирование"
         '
-        'УдалениеСтрокToolStripMenuItem
+        'ИдеальныйФайлToolStripMenuItem
         '
-        Me.УдалениеСтрокToolStripMenuItem.Name = "УдалениеСтрокToolStripMenuItem"
-        Me.УдалениеСтрокToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
-        Me.УдалениеСтрокToolStripMenuItem.Text = "Удаление строк"
+        Me.ИдеальныйФайлToolStripMenuItem.Name = "ИдеальныйФайлToolStripMenuItem"
+        Me.ИдеальныйФайлToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
+        Me.ИдеальныйФайлToolStripMenuItem.Text = "Идеальный файл"
         '
         'ПАЛИНДРОМЫToolStripMenuItem
         '
@@ -88,8 +90,14 @@ Partial Class Form1
         'МаксПредлToolStripMenuItem
         '
         Me.МаксПредлToolStripMenuItem.Name = "МаксПредлToolStripMenuItem"
-        Me.МаксПредлToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
+        Me.МаксПредлToolStripMenuItem.Size = New System.Drawing.Size(200, 30)
         Me.МаксПредлToolStripMenuItem.Text = "Макс. предл."
+        '
+        'ВыходToolStripMenuItem
+        '
+        Me.ВыходToolStripMenuItem.Name = "ВыходToolStripMenuItem"
+        Me.ВыходToolStripMenuItem.Size = New System.Drawing.Size(76, 29)
+        Me.ВыходToolStripMenuItem.Text = "Выход"
         '
         'OpenFileDialog1
         '
@@ -99,22 +107,34 @@ Partial Class Form1
         '
         Me.lb1.FormattingEnabled = True
         Me.lb1.ItemHeight = 20
-        Me.lb1.Location = New System.Drawing.Point(33, 209)
+        Me.lb1.Location = New System.Drawing.Point(12, 80)
         Me.lb1.Name = "lb1"
-        Me.lb1.Size = New System.Drawing.Size(559, 344)
+        Me.lb1.Size = New System.Drawing.Size(1397, 344)
         Me.lb1.TabIndex = 1
         '
-        'ВыходToolStripMenuItem
+        'lb2
         '
-        Me.ВыходToolStripMenuItem.Name = "ВыходToolStripMenuItem"
-        Me.ВыходToolStripMenuItem.Size = New System.Drawing.Size(76, 29)
-        Me.ВыходToolStripMenuItem.Text = "Выход"
+        Me.lb2.FormattingEnabled = True
+        Me.lb2.ItemHeight = 20
+        Me.lb2.Location = New System.Drawing.Point(12, 440)
+        Me.lb2.Name = "lb2"
+        Me.lb2.Size = New System.Drawing.Size(1397, 344)
+        Me.lb2.TabIndex = 2
+        '
+        'tb
+        '
+        Me.tb.Location = New System.Drawing.Point(419, 47)
+        Me.tb.Name = "tb"
+        Me.tb.Size = New System.Drawing.Size(739, 26)
+        Me.tb.TabIndex = 3
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1146, 593)
+        Me.ClientSize = New System.Drawing.Size(1533, 789)
+        Me.Controls.Add(Me.tb)
+        Me.Controls.Add(Me.lb2)
         Me.Controls.Add(Me.lb1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -132,10 +152,12 @@ Partial Class Form1
     Friend WithEvents ФайлToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ОткрытьToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents РедактированиеToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents УдалениеСтрокToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ПАЛИНДРОМЫToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ПоискToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents МаксПредлToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents lb1 As ListBox
     Friend WithEvents ВыходToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents lb2 As ListBox
+    Friend WithEvents ИдеальныйФайлToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents tb As TextBox
 End Class
