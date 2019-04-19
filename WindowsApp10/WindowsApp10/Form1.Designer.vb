@@ -25,20 +25,21 @@ Partial Class Form1
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ФайлToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ОткрытьToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.РедактированиеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ПоискToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.УдалениеСтрокToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ПАЛИНДРОМЫToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ПоискToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.МаксПредлToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.lb1 = New System.Windows.Forms.ListBox()
+        Me.ВыходToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ФайлToolStripMenuItem, Me.РедактированиеToolStripMenuItem, Me.ПоискToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ФайлToolStripMenuItem, Me.РедактированиеToolStripMenuItem, Me.ПоискToolStripMenuItem, Me.ВыходToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1146, 33)
@@ -58,23 +59,12 @@ Partial Class Form1
         Me.ОткрытьToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
         Me.ОткрытьToolStripMenuItem.Text = "Открыть"
         '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
         'РедактированиеToolStripMenuItem
         '
         Me.РедактированиеToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.УдалениеСтрокToolStripMenuItem, Me.ПАЛИНДРОМЫToolStripMenuItem})
         Me.РедактированиеToolStripMenuItem.Name = "РедактированиеToolStripMenuItem"
         Me.РедактированиеToolStripMenuItem.Size = New System.Drawing.Size(158, 29)
         Me.РедактированиеToolStripMenuItem.Text = "Редактирование"
-        '
-        'ПоискToolStripMenuItem
-        '
-        Me.ПоискToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.МаксПредлToolStripMenuItem})
-        Me.ПоискToolStripMenuItem.Name = "ПоискToolStripMenuItem"
-        Me.ПоискToolStripMenuItem.Size = New System.Drawing.Size(75, 29)
-        Me.ПоискToolStripMenuItem.Text = "Поиск"
         '
         'УдалениеСтрокToolStripMenuItem
         '
@@ -88,11 +78,22 @@ Partial Class Form1
         Me.ПАЛИНДРОМЫToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
         Me.ПАЛИНДРОМЫToolStripMenuItem.Text = "ПАЛИНДРОМЫ"
         '
+        'ПоискToolStripMenuItem
+        '
+        Me.ПоискToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.МаксПредлToolStripMenuItem})
+        Me.ПоискToolStripMenuItem.Name = "ПоискToolStripMenuItem"
+        Me.ПоискToolStripMenuItem.Size = New System.Drawing.Size(75, 29)
+        Me.ПоискToolStripMenuItem.Text = "Поиск"
+        '
         'МаксПредлToolStripMenuItem
         '
         Me.МаксПредлToolStripMenuItem.Name = "МаксПредлToolStripMenuItem"
         Me.МаксПредлToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
         Me.МаксПредлToolStripMenuItem.Text = "Макс. предл."
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'lb1
         '
@@ -102,6 +103,12 @@ Partial Class Form1
         Me.lb1.Name = "lb1"
         Me.lb1.Size = New System.Drawing.Size(559, 344)
         Me.lb1.TabIndex = 1
+        '
+        'ВыходToolStripMenuItem
+        '
+        Me.ВыходToolStripMenuItem.Name = "ВыходToolStripMenuItem"
+        Me.ВыходToolStripMenuItem.Size = New System.Drawing.Size(76, 29)
+        Me.ВыходToolStripMenuItem.Text = "Выход"
         '
         'Form1
         '
@@ -130,4 +137,5 @@ Partial Class Form1
     Friend WithEvents ПоискToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents МаксПредлToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents lb1 As ListBox
+    Friend WithEvents ВыходToolStripMenuItem As ToolStripMenuItem
 End Class
