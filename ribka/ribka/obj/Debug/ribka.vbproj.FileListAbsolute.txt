@@ -1,0 +1,12 @@
+C:\Users\edgar\source\repos\ribka\ribka\bin\Debug\ribka.exe.config
+C:\Users\edgar\source\repos\ribka\ribka\bin\Debug\ribka.exe
+C:\Users\edgar\source\repos\ribka\ribka\bin\Debug\ribka.pdb
+C:\Users\edgar\source\repos\ribka\ribka\bin\Debug\ribka.xml
+C:\Users\edgar\source\repos\ribka\ribka\obj\Debug\ribka.vbprojAssemblyReference.cache
+C:\Users\edgar\source\repos\ribka\ribka\obj\Debug\ribka.Form1.resources
+C:\Users\edgar\source\repos\ribka\ribka\obj\Debug\ribka.Resources.resources
+C:\Users\edgar\source\repos\ribka\ribka\obj\Debug\ribka.vbproj.GenerateResource.cache
+C:\Users\edgar\source\repos\ribka\ribka\obj\Debug\ribka.vbproj.CoreCompileInputs.cache
+C:\Users\edgar\source\repos\ribka\ribka\obj\Debug\ribka.exe
+C:\Users\edgar\source\repos\ribka\ribka\obj\Debug\ribka.xml
+C:\Users\edgar\source\repos\ribka\ribka\obj\Debug\ribka.pdb

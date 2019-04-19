@@ -1,0 +1,13 @@
+C:\Users\edgar\source\repos\rk\rk\bin\Debug\rk.exe.config
+C:\Users\edgar\source\repos\rk\rk\bin\Debug\rk.exe
+C:\Users\edgar\source\repos\rk\rk\bin\Debug\rk.pdb
+C:\Users\edgar\source\repos\rk\rk\bin\Debug\rk.xml
+C:\Users\edgar\source\repos\rk\rk\obj\Debug\rk.vbprojAssemblyReference.cache
+C:\Users\edgar\source\repos\rk\rk\obj\Debug\rk.Form1.resources
+C:\Users\edgar\source\repos\rk\rk\obj\Debug\rk.Form2.resources
+C:\Users\edgar\source\repos\rk\rk\obj\Debug\rk.Resources.resources
+C:\Users\edgar\source\repos\rk\rk\obj\Debug\rk.vbproj.GenerateResource.cache
+C:\Users\edgar\source\repos\rk\rk\obj\Debug\rk.vbproj.CoreCompileInputs.cache
+C:\Users\edgar\source\repos\rk\rk\obj\Debug\rk.exe
+C:\Users\edgar\source\repos\rk\rk\obj\Debug\rk.xml
+C:\Users\edgar\source\repos\rk\rk\obj\Debug\rk.pdb

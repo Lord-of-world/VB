@@ -1,0 +1,13 @@
+C:\Users\edgar\source\repos\rko\rko\bin\Debug\rko.exe.config
+C:\Users\edgar\source\repos\rko\rko\bin\Debug\rko.exe
+C:\Users\edgar\source\repos\rko\rko\bin\Debug\rko.pdb
+C:\Users\edgar\source\repos\rko\rko\bin\Debug\rko.xml
+C:\Users\edgar\source\repos\rko\rko\obj\Debug\rko.vbprojAssemblyReference.cache
+C:\Users\edgar\source\repos\rko\rko\obj\Debug\rko.Form1.resources
+C:\Users\edgar\source\repos\rko\rko\obj\Debug\rko.Form2.resources
+C:\Users\edgar\source\repos\rko\rko\obj\Debug\rko.Resources.resources
+C:\Users\edgar\source\repos\rko\rko\obj\Debug\rko.vbproj.GenerateResource.cache
+C:\Users\edgar\source\repos\rko\rko\obj\Debug\rko.vbproj.CoreCompileInputs.cache
+C:\Users\edgar\source\repos\rko\rko\obj\Debug\rko.exe
+C:\Users\edgar\source\repos\rko\rko\obj\Debug\rko.xml
+C:\Users\edgar\source\repos\rko\rko\obj\Debug\rko.pdb

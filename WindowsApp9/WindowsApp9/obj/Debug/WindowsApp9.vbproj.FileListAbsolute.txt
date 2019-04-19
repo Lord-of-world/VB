@@ -1,0 +1,12 @@
+C:\Users\edgar\source\repos\WindowsApp9\WindowsApp9\bin\Debug\WindowsApp9.exe.config
+C:\Users\edgar\source\repos\WindowsApp9\WindowsApp9\bin\Debug\WindowsApp9.exe
+C:\Users\edgar\source\repos\WindowsApp9\WindowsApp9\bin\Debug\WindowsApp9.pdb
+C:\Users\edgar\source\repos\WindowsApp9\WindowsApp9\bin\Debug\WindowsApp9.xml
+C:\Users\edgar\source\repos\WindowsApp9\WindowsApp9\obj\Debug\WindowsApp9.vbprojAssemblyReference.cache
+C:\Users\edgar\source\repos\WindowsApp9\WindowsApp9\obj\Debug\WindowsApp9.Form1.resources
+C:\Users\edgar\source\repos\WindowsApp9\WindowsApp9\obj\Debug\WindowsApp9.Resources.resources
+C:\Users\edgar\source\repos\WindowsApp9\WindowsApp9\obj\Debug\WindowsApp9.vbproj.GenerateResource.cache
+C:\Users\edgar\source\repos\WindowsApp9\WindowsApp9\obj\Debug\WindowsApp9.vbproj.CoreCompileInputs.cache
+C:\Users\edgar\source\repos\WindowsApp9\WindowsApp9\obj\Debug\WindowsApp9.exe
+C:\Users\edgar\source\repos\WindowsApp9\WindowsApp9\obj\Debug\WindowsApp9.xml
+C:\Users\edgar\source\repos\WindowsApp9\WindowsApp9\obj\Debug\WindowsApp9.pdb
