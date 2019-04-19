@@ -23,7 +23,9 @@
     Private Sub ПАЛИНДРОМЫToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ПАЛИНДРОМЫToolStripMenuItem.Click
         OpenFileDialog1.ShowDialog()
         fn = OpenFileDialog1.FileName
-
+        Печать(fn, lb1)
+        Палиндромы(fn)
+        Печать(fn, lb2)
     End Sub
 
     Private Sub ВыходToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ВыходToolStripMenuItem.Click

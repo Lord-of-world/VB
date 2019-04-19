@@ -32,6 +32,7 @@
         Dim k, kbuf As Integer, sbuf As String
         FileOpen(1, fn, OpenMode.Input)
         tb.Text = ""
+        sbuf = ""
         Do Until EOF(1)
             s = LineInput(1)
             k = 0
@@ -41,5 +42,27 @@
             If k > kbuf Then kbuf = k : sbuf = s
         Loop
         tb.Text = sbuf
+        FileClose()
+    End Sub
+    Public Sub Палиндромы(ByVal fn As String)
+        Dim ms(), buf As String
+        FileOpen(1, fn, OpenMode.Input)
+        FileOpen(2, fn + "1", OpenMode.Output)
+        Do Until EOF(1)
+            s = LineInput(1)
+            ms = Split(s)
+            For i = 0 To UBound(ms)
+                buf = ""
+                If InStr(ms(i), ".") > 0 Then buf = "." : ms(i) = Replace(ms(i), ".", "")
+                If UCase(ms(i)) = StrReverse(UCase(ms(i))) Then
+                    ms(i) = UCase(ms(i)) + buf
+                End If
+            Next
+            s = Join(ms)
+            PrintLine(2, s)
+        Loop
+        FileClose()
+        Kill(fn)
+        Rename(fn + "1", fn)
     End Sub
 End Module
