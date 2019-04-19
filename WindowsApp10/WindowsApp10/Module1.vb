@@ -34,6 +34,7 @@
         tb.Text = ""
         Do Until EOF(1)
             s = LineInput(1)
+            k = 0
             For i = 1 To Len(s)
                 If Mid(s, i, 1) = "." Then k = k + 1
             Next
