@@ -55,8 +55,9 @@
                 buf = ""
                 If InStr(ms(i), ".") > 0 Then buf = "." : ms(i) = Replace(ms(i), ".", "")
                 If UCase(ms(i)) = StrReverse(UCase(ms(i))) Then
-                    ms(i) = UCase(ms(i)) + buf
+                    ms(i) = UCase(ms(i))
                 End If
+                ms(i) = ms(i) + buf
             Next
             s = Join(ms)
             PrintLine(2, s)
