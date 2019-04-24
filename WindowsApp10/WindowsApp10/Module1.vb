@@ -10,10 +10,10 @@
         FileClose()
     End Sub
     Public Function Ideal(ByVal s As String) As String
-        s = Trim(s)
         Do While InStr(s, "  ") <> 0
             s = Replace(s, "  ", " ")
         Loop
+        s = Trim(s)
         Return s
     End Function
     Public Sub ИдеальныйФайл(ByVal fn As String)
