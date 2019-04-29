@@ -28,11 +28,13 @@
         Dim k, i As Integer, mas() As String
         FileOpen(1, fn, OpenMode.Input)
         Do Until EOF(1)
+
             s = LineInput(1)
             mas = Split(s)
             For i = 0 To UBound(mas)
                 If Trim(Str(Val(mas(i)))) = mas(i) Then k = k + mas(i)
             Next
+
         Loop
         FileClose()
         Return k
