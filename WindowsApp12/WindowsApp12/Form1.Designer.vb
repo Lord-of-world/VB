@@ -24,12 +24,24 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.РисованиеToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.СолнышкоToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.СолнышкоToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.МассивСолнышекToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.КругСолнышекToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.КорабликToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.КорабликToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.МассивКорабликовToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.КругКорабликовToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ДомикToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ДомикToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.МассивДомиковToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.КругДомиковToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ОчиститьToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ВыходToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.pb = New System.Windows.Forms.PictureBox()
         Me.MenuStrip1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -38,7 +50,7 @@ Partial Class Form1
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.РисованиеToolStripMenuItem, Me.ОчиститьToolStripMenuItem, Me.ВыходToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(960, 33)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1101, 33)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -47,19 +59,87 @@ Partial Class Form1
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(12, 29)
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(103, 102)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(645, 289)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
         'РисованиеToolStripMenuItem
         '
+        Me.РисованиеToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.СолнышкоToolStripMenuItem, Me.КорабликToolStripMenuItem, Me.ДомикToolStripMenuItem})
         Me.РисованиеToolStripMenuItem.Name = "РисованиеToolStripMenuItem"
         Me.РисованиеToolStripMenuItem.Size = New System.Drawing.Size(111, 29)
         Me.РисованиеToolStripMenuItem.Text = "Рисование"
+        '
+        'СолнышкоToolStripMenuItem
+        '
+        Me.СолнышкоToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.СолнышкоToolStripMenuItem1, Me.МассивСолнышекToolStripMenuItem, Me.КругСолнышекToolStripMenuItem})
+        Me.СолнышкоToolStripMenuItem.Name = "СолнышкоToolStripMenuItem"
+        Me.СолнышкоToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
+        Me.СолнышкоToolStripMenuItem.Text = "Солнышко"
+        '
+        'СолнышкоToolStripMenuItem1
+        '
+        Me.СолнышкоToolStripMenuItem1.Name = "СолнышкоToolStripMenuItem1"
+        Me.СолнышкоToolStripMenuItem1.Size = New System.Drawing.Size(256, 30)
+        Me.СолнышкоToolStripMenuItem1.Text = "Солнышко"
+        '
+        'МассивСолнышекToolStripMenuItem
+        '
+        Me.МассивСолнышекToolStripMenuItem.Name = "МассивСолнышекToolStripMenuItem"
+        Me.МассивСолнышекToolStripMenuItem.Size = New System.Drawing.Size(256, 30)
+        Me.МассивСолнышекToolStripMenuItem.Text = "Массив Солнышек"
+        '
+        'КругСолнышекToolStripMenuItem
+        '
+        Me.КругСолнышекToolStripMenuItem.Name = "КругСолнышекToolStripMenuItem"
+        Me.КругСолнышекToolStripMenuItem.Size = New System.Drawing.Size(256, 30)
+        Me.КругСолнышекToolStripMenuItem.Text = "Спираль Солнышек"
+        '
+        'КорабликToolStripMenuItem
+        '
+        Me.КорабликToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.КорабликToolStripMenuItem1, Me.МассивКорабликовToolStripMenuItem, Me.КругКорабликовToolStripMenuItem})
+        Me.КорабликToolStripMenuItem.Name = "КорабликToolStripMenuItem"
+        Me.КорабликToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
+        Me.КорабликToolStripMenuItem.Text = "Кораблик"
+        '
+        'КорабликToolStripMenuItem1
+        '
+        Me.КорабликToolStripMenuItem1.Name = "КорабликToolStripMenuItem1"
+        Me.КорабликToolStripMenuItem1.Size = New System.Drawing.Size(261, 30)
+        Me.КорабликToolStripMenuItem1.Text = "Кораблик"
+        '
+        'МассивКорабликовToolStripMenuItem
+        '
+        Me.МассивКорабликовToolStripMenuItem.Name = "МассивКорабликовToolStripMenuItem"
+        Me.МассивКорабликовToolStripMenuItem.Size = New System.Drawing.Size(261, 30)
+        Me.МассивКорабликовToolStripMenuItem.Text = "Массив корабликов"
+        '
+        'КругКорабликовToolStripMenuItem
+        '
+        Me.КругКорабликовToolStripMenuItem.Name = "КругКорабликовToolStripMenuItem"
+        Me.КругКорабликовToolStripMenuItem.Size = New System.Drawing.Size(269, 30)
+        Me.КругКорабликовToolStripMenuItem.Text = "Спираль корабликов"
+        '
+        'ДомикToolStripMenuItem
+        '
+        Me.ДомикToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ДомикToolStripMenuItem1, Me.МассивДомиковToolStripMenuItem, Me.КругДомиковToolStripMenuItem})
+        Me.ДомикToolStripMenuItem.Name = "ДомикToolStripMenuItem"
+        Me.ДомикToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
+        Me.ДомикToolStripMenuItem.Text = "Домик"
+        '
+        'ДомикToolStripMenuItem1
+        '
+        Me.ДомикToolStripMenuItem1.Name = "ДомикToolStripMenuItem1"
+        Me.ДомикToolStripMenuItem1.Size = New System.Drawing.Size(236, 30)
+        Me.ДомикToolStripMenuItem1.Text = "Домик"
+        '
+        'МассивДомиковToolStripMenuItem
+        '
+        Me.МассивДомиковToolStripMenuItem.Name = "МассивДомиковToolStripMenuItem"
+        Me.МассивДомиковToolStripMenuItem.Size = New System.Drawing.Size(236, 30)
+        Me.МассивДомиковToolStripMenuItem.Text = "Массив домиков"
+        '
+        'КругДомиковToolStripMenuItem
+        '
+        Me.КругДомиковToolStripMenuItem.Name = "КругДомиковToolStripMenuItem"
+        Me.КругДомиковToolStripMenuItem.Size = New System.Drawing.Size(252, 30)
+        Me.КругДомиковToolStripMenuItem.Text = "Спираль домиков"
         '
         'ОчиститьToolStripMenuItem
         '
@@ -73,19 +153,27 @@ Partial Class Form1
         Me.ВыходToolStripMenuItem.Size = New System.Drawing.Size(76, 29)
         Me.ВыходToolStripMenuItem.Text = "Выход"
         '
+        'pb
+        '
+        Me.pb.Location = New System.Drawing.Point(12, 36)
+        Me.pb.Name = "pb"
+        Me.pb.Size = New System.Drawing.Size(1077, 534)
+        Me.pb.TabIndex = 1
+        Me.pb.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(960, 497)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.ClientSize = New System.Drawing.Size(1101, 582)
+        Me.Controls.Add(Me.pb)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -96,5 +184,17 @@ Partial Class Form1
     Friend WithEvents РисованиеToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ОчиститьToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ВыходToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents pb As PictureBox
+    Friend WithEvents СолнышкоToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents СолнышкоToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents МассивСолнышекToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents КругСолнышекToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents КорабликToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents КорабликToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents МассивКорабликовToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents КругКорабликовToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ДомикToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ДомикToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents МассивДомиковToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents КругДомиковToolStripMenuItem As ToolStripMenuItem
 End Class
