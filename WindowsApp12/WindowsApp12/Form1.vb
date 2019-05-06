@@ -5,14 +5,16 @@
         End
     End Sub
     Private Sub ОчиститьToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ОчиститьToolStripMenuItem.Click
-        pb.Image = Nothing
+        pb.Refresh()
     End Sub
-    Public Sub СолнышкоToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles СолнышкоToolStripMenuItem1.Click
+    Private Sub СолнышкоToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles СолнышкоToolStripMenuItem1.Click
+        pb.Refresh()
         h = pb.ClientSize.Height
         x = 0 : y = 0
         sun(x, y, h, pb)
     End Sub
     Private Sub МассивСолнышекToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles МассивСолнышекToolStripMenuItem.Click
+        pb.Refresh()
         n = Val(InputBox("Введите количество строк"))
         y = 0
         h = pb.ClientSize.Height \ n
@@ -26,6 +28,7 @@
         Next
     End Sub
     Private Sub СпиральСолнышекToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles КругСолнышекToolStripMenuItem.Click
+        pb.Refresh()
         n = Val(InputBox("Введите количество Солнышек"))
         x = 0 : y = 0
         grad = 2 * Math.PI / n
@@ -44,6 +47,7 @@
     End Sub
 
     Private Sub КорабликToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles КорабликToolStripMenuItem1.Click
+        pb.Refresh()
 
     End Sub
 
