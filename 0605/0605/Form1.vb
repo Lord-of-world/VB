@@ -9,7 +9,7 @@
         For i = 1 To n
             x = 0
             For j = 1 To n
-                If (i + j) Mod 2 = 0 Then
+                If (i + j) Mod 2 = 0 Then ' Чтобы выводить треугольником нужно: убрать этот If, в цикле написать For j = 1 To i
                     Бабочка(x, y, h, pb)
                 End If
                 x = x + h
