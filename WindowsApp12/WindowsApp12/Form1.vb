@@ -48,6 +48,8 @@
 
     Private Sub КорабликToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles КорабликToolStripMenuItem1.Click
         pb.Refresh()
+        h = pb.ClientSize.Height
+        x = 0 : y = 0
 
     End Sub
 
