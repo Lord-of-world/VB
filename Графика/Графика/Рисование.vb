@@ -82,5 +82,8 @@
         g.DrawPolygon(p, winda)
         g.DrawLine(p, x + 3 * h \ 5, y + 3 * h \ 5, x + 4 * h \ 5, y + 3 * h \ 5)
         g.DrawLine(p, x + 7 * h \ 10, y + h \ 2, x + 7 * h \ 10, y + 7 * h \ 10)
+
+        g.FillEllipse(k2, x + 6.5 * h \ 30, y + 21 * h \ 30, h \ 30, h \ 30)
+        g.DrawEllipse(p, x + 6.5 * h \ 30, y + 21 * h \ 30, h \ 30, h \ 30)
     End Sub
 End Module
