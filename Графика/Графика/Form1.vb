@@ -1,7 +1,6 @@
 ﻿Public Class Form1
     Dim g As Graphics
-    Dim x, x1, xc, y, y1, yc, h, hf, n, k, i, j, grad, rad, r, komp As Single
-    Dim sd, km As Single
+    Dim x, x1, xc, y, y1, yc, h, hf, n, k, i, j, grad, rad, r, komp, sd, km As Single
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         x = x + sd
@@ -161,6 +160,7 @@
     Private Sub СолнышкоToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles СолнышкоToolStripMenuItem2.Click
         PB.Refresh()
         xc = 0 : yc = 0
+        x = 0 : y = 0
         h = PB.ClientSize.Height
         Do
             sd = Val(InputBox("Введите шаг движения в пикселях",, 4))
